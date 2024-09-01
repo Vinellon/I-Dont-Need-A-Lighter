@@ -1,31 +1,53 @@
 version=1
 id=2883633728
 title=I Might Need A Lighter
+description=[h2]Philosophy behind this mod[/h2]
+description=The first iteration of this mod [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2714198296] I Don't Need A Lighter[/url] missed the balance I was aiming at when writing it. It made the Smoker trait even more a freebie point than it should. With this version I want to keep the vanilla's lighters as the best option to light a cigarette, but also provide the player with more risky and/or scarce alternate options .
+description=
 description=[h1]DISCLAIMER :[/h1]
 description=[List]
-description=[*]THIS IS AN EARLY WORK IN PROGRESS VERSION OF THE MOD.
-description=[*]TEST IT AT YOUR OWN DISCRETION
-description=[*]NO SUPPORT FOR NOW (but you can submit bug reports [url=https://steamcommunity.com/workshop/filedetails/discussion/2883633728/3493131640454215245/]here <3[/url])
-description=[*]EXPECT FREQUENT AND GAMEBREAKING UPDATE
+description=[*]MP has been tested and work
+description=[*]You can submit bug reports [url=https://steamcommunity.com/workshop/filedetails/discussion/2883633728/3493131640454215245/](here <3[/url])
+description=[*] Changelog : https://steamcommunity.com/sharedfiles/filedetails//changelog/2883633728/
 description=[/list]
 description=
-description=[h2]Philosophy behind this mod[/h2]
-description=The first iteration of this mod [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2714198296] I Don't Need A Lighter[/url] missed the balance I was aiming at. It made the Smoker trait even more a freebie point than it should. With this version I want to keep the vanilla's lighters as the best option to light a cigarette, but also provide the player more risky and/or scarce alternate options .
-description=
-description=[h2]Current feature implemented [/h2]
+description=[h1]Car lighter overhaul : [/h1]
 description=[list]
-description=[*] Car scan now spawn within three different state regarding car lighters : No car lighter and car lighter socket is damaged / No car lighter / Car lighter present
-description=[*] Broken socket can now be repaired (requirement will be added soon)
-description=[*] Player can install or retrieve car lighters from any car
-description=[*] Car lighter is now an item that can be carried by player
-description=[*] All TimedAction are now dynamic. The car lighter timing depend on the durability and charge level of the car battery. The timing for the stove smoking is now tied to the player current stats(Panic,Fatigue,Endurance/Pain and hand injuries).
+description=[*]Car lighters are no longer guaranteed to be found in every car. The car lighter socket can be empty or even in need of repair before becoming usable.
+description=[*]Car lighter is now an object that can be carried by players, removed from cars containing one or installed in cars in need of one.
+description=[*]The time it takes to warm up a car lighter is now directly tied to the car battery durability and charge level.
 description=[/list]
 description=
-description=[h2]Planned feature[/h2]
+description=[h1]Stove smoking overhaul :[/h1]
 description=[list]
-description=[*] Sandbox options to adjust the percentage of chance to spawn a car lighter in each vehicle
-description=[*] All stove smoking methods are gonna be more risky (injury / break the cigarette / induce stress on failure/etc). The chance of failure will be calculated from the current state of the player (moodles & stats) + what appliance is currently being used + a random factor (sandbox option)
-description=[*] Add a risk to break the car lighter and/or the car lighter socket depending on the battery state / charge level
+description=[*]Lighting a cigarette on a stove top now comes with a risk. If you accumulate too much malus(possible malus are currently coming from : Fatigue/Pain/Panic/Drunkeness/Hand Injuries) you risk having an accident when doing so.
+description=[*]The time it take to light up a cigarette on a stove top is now directly tied to multiple current stat of your survivor ( Panic / Pain / Fatigue / Drunkenness / Hand injuries )
 description=[/list]
+description=
+description=[h2]Mod Compatibility[/h2]
+description=[list]
+description=[*]Smoker : https://steamcommunity.com/workshop/filedetails/?id=2026976958
+description=[*]Green Fire: https://steamcommunity.com/sharedfiles/filedetails/?id=1703604612
+description=[*]More Smokes : https://steamcommunity.com/sharedfiles/filedetails/?id=2923439994 (not yet thoroughly tested)
+description=[/list]
+description=
+description=[h1]Planned to be added[/h1]
+description=[list]
+description=[*] Add more possible outcome when failing to light a cigarette on stoves
+description=[*] Add the risk of breaking the car lighter and/or the car lighter socket when using it with a low durability/charge level car battery
+description=[*] Add a 3d model to the car lighter
+description=[*]Update translation strings (to all supported language in the v1)
+description=[/list]
+description=
+description=Want to help translate this mod ? Join here : https://crowdin.com/project/i-might-need-a-lighter
+description=[b][url=https://github.com/Fingbel/I-Dont-Need-A-Lighter/tree/V2]Github [/url]
+description=
+description=[h3]My other mods:[/h3]
+description=[list]
+description=[*] I Don't Need A Lighter : https://steamcommunity.com/sharedfiles/filedetails/?id=2714198296
+description=[*] Fasten You SeatBelt : https://steamcommunity.com/sharedfiles/filedetails/?id=2722218474
+description=[/list]
+description=
+description=[b][url=https://ko-fi.com/fingbel][img]https://uploads-ssl.webflow.com/5c14e387dab576fe667689cf/61e11d430afb112ea33c3aa5_Button-1-p-500.png[/img][/url][/b]
 tags=Build 41;Balance;Misc;Multiplayer;Realistic
 visibility=public

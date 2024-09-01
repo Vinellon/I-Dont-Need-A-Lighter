@@ -40,6 +40,26 @@ option IMNAL.mechanicReq
 	translation = IMNAL_mechanicReq,
 }
 
+option IMNAL.stoveSmokingLength
+{
+	type = integer,
+	max = 9999,
+	min = 1,
+	default = 460,
+	page = IMightNeedALighter,
+	translation = IMNAL_stoveSmokingLength,
+}
+
+option IMNAL.carSmokingLength
+{
+	type = integer,
+	max = 9999,
+	min = 1,
+	default = 460,
+	page = IMightNeedALighter,
+	translation = IMNAL_carSmokingLength,
+}
+
 option IMNAL.allowStove
 {
 	type = boolean,

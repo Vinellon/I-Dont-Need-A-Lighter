@@ -17,9 +17,11 @@ Events.OnInitGlobalModData.Add(IMNALSPLoad)
 function OnEnterVehicleCLCheck(player)
 	sendClientCommand(player, 'IMNAL', 'Update', {vehicle = player:getVehicle():getKeyId(), playerID = player:getOnlineID()})
 	if(getWorld():getGameMode() ~= "Multiplayer")then	
+		--if(IMNALSPVehicles == nill) then 
+		--	IMNALSPLoad(true) -- Sanity check to make sure the table is not null (mod added mid-save)
+		--end
 		if(IMNALSPVehicles[player:getVehicle():getKeyId()] == nill) then
 			local rand = CarLighterRandomizer()
-			print("New car")
 			IMNALSPVehicles[player:getVehicle():getKeyId()] = rand
 			player:getModData().CL = rand			
 		else
@@ -182,7 +184,7 @@ function OnCarSmoking(_player, _cigarette)
 	ISTimedActionQueue.add(IsCarLighting:new (_player, _cigarette, carlighterFinalTimer))
 	
 	--Let's smoke now
-	ISTimedActionQueue.add(IsCarSmoking:new(_player, _cigarette, 460))
+	ISTimedActionQueue.add(IsCarSmoking:new(_player, _cigarette,  SandboxVars.IMNAL.carSmokingLength))
 end
 
 function OnCarLighterInstalling(_player, _carlighter)
