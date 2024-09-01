@@ -88,6 +88,18 @@ function OnStoveSmoking(_player, stove, _cigarette)
 			ISTimedActionQueue.add(ISInventoryTransferAction:new (_player,  _cigarette, _cigarette:getContainer(), _player:getInventory(), 5))
 		end
 	end
+
+	--Are we wearing a mask that should be preventing us from smoking ?
+	local wornItems = _player:getWornItems();
+	local itemToRemove = 0;
+	for i=0,wornItems:size() -1 do
+		local itemLocation = wornItems:get(i):getLocation()
+		if(itemLocation == "MaskEyes"  or itemLocation == "FullHat" or itemLocation == "Mask") then 			
+			itemToRemove = wornItems:get(i):getItem()
+			ISTimedActionQueue.add(ISUnequipAction:new(_player,itemToRemove,50))
+			break;
+		end				
+	end	
 	
 	--This is where we calculate the length of the timed action and outcome
 	local outcome = DeterminateStoveSmokingOutcome(_player, stove, _cigarette)
@@ -120,7 +132,12 @@ function OnStoveSmoking(_player, stove, _cigarette)
 
 	--Now it's lit, let's smoke it
 	if luautils.walkAdj(_player, stove:getSquare(), true) then 	
-		ISTimedActionQueue.add(IsStoveSmoking:new(_player, stove, _cigarette, 460)) -- THIS ONE IS HARDCODED TO REFLECT VANILLA SMOKING
+		ISTimedActionQueue.add(IsStoveSmoking:new(_player, stove, _cigarette, SandboxVars.IMNAL.stoveSmokingLength))
+	end
+
+	--We should put back our mask if we had one
+	if(itemToRemove ~= 0) then
+		ISTimedActionQueue.add(ISWearClothing:new(_player,itemToRemove,50))
 	end
 end
 
