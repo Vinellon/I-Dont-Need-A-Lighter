@@ -17,9 +17,10 @@ Events.OnInitGlobalModData.Add(IMNALSPLoad)
 function OnEnterVehicleCLCheck(player)
 	sendClientCommand(player, 'IMNAL', 'Update', {vehicle = player:getVehicle():getKeyId(), playerID = player:getOnlineID()})
 	if(getWorld():getGameMode() ~= "Multiplayer")then	
-		--if(IMNALSPVehicles == nill) then 
-		--	IMNALSPLoad(true) -- Sanity check to make sure the table is not null (mod added mid-save)
-		--end
+		if(IMNALSPVehicles == nill) then 
+			print("IMNAL mid-save addition detected, creating the table, YOU SHOULD ONLY SEE THIS MESSAGE ONCE")
+			IMNALSPLoad(true) -- Sanity check to make sure the table is not null (mod added mid-save)
+		end
 		if(IMNALSPVehicles[player:getVehicle():getKeyId()] == nill) then
 			local rand = CarLighterRandomizer()
 			IMNALSPVehicles[player:getVehicle():getKeyId()] = rand
