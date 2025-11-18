@@ -1,14 +1,14 @@
 ContextMenu_RU = {
-	ContextMenu_Smoke = "Курить"
+	ContextMenu_Smoke = "РљСѓСЂРёС‚СЊ"
 	
-	ContextMenu_CarLighter = "Автомобильная зажигалка"
-	ContextMenu_NoCarLighter = "Нет автомобильной зажигалки"
-	ContextMenu_InstallCarLighter = "Подключите автомобильный прикуриватель"
-	ContextMenu_UnInstallCarLighter = "Отключите автомобильный прикуриватель"
-	ContextMenu_CarLighterRepairNoSkill = "<br> needs repair"
-	ContextMenu_CarLighterRepairWithSkill = "<br> can be repaired"
+	ContextMenu_CarLighter = "РџСЂРёРєСѓСЂРёРІР°С‚РµР»СЊ"
+	ContextMenu_NoCarLighter = "РќРµС‚ РїСЂРёРєСѓСЂРёРІР°С‚РµР»СЏ"
+	ContextMenu_InstallCarLighter = "РџРѕСЃС‚Р°РІРёС‚СЊ РїСЂРёРєСѓСЂРёРІР°С‚РµР»СЊ"
+	ContextMenu_UnInstallCarLighter = "РЎРЅСЏС‚СЊ РїСЂРёРєСѓСЂРёРІР°С‚РµР»СЊ"
+	ContextMenu_CarLighterRepairNoSkill = "<br> С‚СЂРµР±СѓРµС‚ РїРѕС‡РёРЅРєРё"
+	ContextMenu_CarLighterRepairWithSkill = "<br> РјРѕР¶РЅРѕ РїРѕС‡РёРЅРёС‚СЊ"
 	
-	ContextMenu_CarOutOfCigarette = " <br> Нечего курить"
-	ContextMenu_CarNoBattery = "<br> Батарея разряжена или отсутствует"
-	ContextMenu_CarNoKeyOrWire = "<br> Ключ или провод отсутствуют"
+	ContextMenu_CarOutOfCigarette = " <br> РќРµС‡РµРіРѕ РєСѓСЂРёС‚СЊ"
+	ContextMenu_CarNoBattery = "<br> РђРєРєСѓРјСѓР»СЏС‚РѕСЂ СЂР°Р·СЂСЏР¶РµРЅ РёР»Рё РѕС‚СЃСѓС‚СЃС‚РІСѓРµС‚"
+	ContextMenu_CarNoKeyOrWire = "<br> РљР»СЋС‡ РёР»Рё СЃРєСЂСѓС‚РєР° РѕС‚СЃСѓС‚СЃС‚РІСѓСЋС‚"
 }

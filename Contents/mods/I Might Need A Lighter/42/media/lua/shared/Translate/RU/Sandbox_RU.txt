@@ -1,15 +1,31 @@
 Sandbox_RU = 
 {
-    Sandbox_IMightNeedALighter = "I Might Need A Lighter"
-    Sandbox_IMNAL_CarLighterChance = "Chance to spawn a car lighter"
-    Sandbox_IMNAL_CarLighterSocketChance = "Chance to have to repair the car lighter socket first"
-    Sandbox_IMNAL_carLighterBaseTimer = "Base timer for car lighters"
-    Sandbox_IMNAL_stoveBaseTimer = "Base timer for stoves"
-    Sandbox_IMNAL_microwaveBaseTimer = "Base timer for microwaves"
-    Sandbox_IMNAL_fireplaceBaseTimer = "Base timer for fireplaces"
-    Sandbox_IMNAL_barbecueBaseTimer = "Base timer for barbecues"
-    Sandbox_IMNAL_campingBaseTimer = "Base timer for camping fire"
-    Sandbox_IMNAL_fireBaseTimer = "Base timer for live fire"
-    Sandbox_IMNAL_playerBaseTimer = "Base timer for other player already smoking"
-    Sandbox_IMNAL_allowMicrowave = "Allow the use of microwave"
+    Sandbox_IMightNeedALighter = "Мне, Вероятно, Нужна Зажигалка"
+
+    Sandbox_IMNAL_CarLighterChance = "Шанс появления прикуривателя в машине"
+    Sandbox_IMNAL_CarLighterSocketChance = "Шанс, что сначала потребуется починить гнездо прикуривателя"
+
+    Sandbox_IMNAL_stoveSmokingLength = "Длительность курения от плиты, 460 в ванилле, меньше - быстрее"
+    Sandbox_IMNAL_carSmokingLength = "Длительность курения от прикуривателя, 460 в ванилле, меньше - быстрее"
+
+    Sandbox_IMNAL_carLighterBaseTimer = "Базовый таймер для прикуривателей"
+    Sandbox_IMNAL_stoveBaseTimer = "Базовый таймер для плит"
+    Sandbox_IMNAL_microwaveBaseTimer = "Базовый таймер для микроволновок"
+    Sandbox_IMNAL_fireplaceBaseTimer = "Базовый таймер для каминов"
+    Sandbox_IMNAL_barbecueBaseTimer = "Базовый таймер для барбекю"
+    Sandbox_IMNAL_campingBaseTimer = "Базовый таймер для костров"
+    Sandbox_IMNAL_fireBaseTimer = "Базовый таймер для 'живого' огня"
+    Sandbox_IMNAL_playerBaseTimer = "Базовый таймер для прикуривания от другого игрока"
+
+    Sandbox_IMNAL_allowStove = "Разрешить использовать плиту"
+    Sandbox_IMNAL_allowMicrowave = "Разрешить использовать микроволновку"
+    Sandbox_IMNAL_allowFireplace = "Разрешить использовать камин"
+    Sandbox_IMNAL_allowBarbecue = "Разрешить использовать гриль для барбекю"
+    Sandbox_IMNAL_allowCampfire = "Разрешить использовать костёр"
+    Sandbox_IMNAL_allowFire = "Разрешить использовать горящий тайл"
+    Sandbox_IMNAL_allowBump = "Разрешить прикуривать от уже курящего игрока"
+
+    Sandbox_IMNAL_noStoveRisk = "WIP ФИЧА - Отключить все риски у плит/костров и т.п."
+    Sandbox_IMNAL_electricityReq = "Навык 'Электрика' необходимый для починки гнезда прикуривателя"
+    Sandbox_IMNAL_mechanicReq = "Навык 'Механика' необходимый для починки гнезда прикуривателя" 
 }
